@@ -1,0 +1,46 @@
+<!--
+- Boilerplate (5%): Implement standard HTML boilerplate code to structure each page, 
+including DOCTYPE, HTML, HEAD, BODY, etc. Ensure a navigation bar is present at the top 
+of every webpage.
+
+- Buttons and Timer (10%): Create a paragraph with the id "timer" to display the timer and 
+add buttons for starting, stopping, and pausing the timer.
+
+- SVG (10%): Use SVG Code to add a picture of a red circle with a green line for the apple.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fira+Code:wght@300..700&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fira+Code:wght@300..700&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js"></script>
+    <title>Pomodoro Timer</title>
+  </head>
+  <body>
+    <nav>
+      <ul></ul>
+    </nav>
+
+    <svg width="700" height="700">
+      <circle cx="350" cy="350" r="250" fill="red" />
+      <ellipse cx="350" cy="131" rx="35" ry="14" fill="darkred" />
+      <rect x="343" y="50" width="14" height="95" fill="darkgreen" />
+      <foreignObject x="150" y="250" width="400" height="400">
+        <p id="timer">25:00</p>
+        <button id="start" onclick="start()">Start</button>
+        <button id="pause" onclick="pause()">Pause</button>
+        <button id="stop" onclick="reset()">Stop</button>
+      </foreignObject>
+    </svg>
+  </body>
+</html>

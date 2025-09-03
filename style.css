@@ -1,0 +1,73 @@
+/* 
+- Boilerplate (5%): Create a styles.css file and link it to the HTML file. Include a style 
+to make the background of the page a light blue and center the pomodoro timer on the page.
+
+- Buttons (10%): Style each button with the Roboto font family, white font color, and green 
+for start, red for stop, and yellow for pause. Apply a black border when hovering over each button.
+
+- Clock (10%): Style the clock with the Orbitron font. When hovered over, the clock should 
+turn yellow; otherwise, it should be white. Additionally, when the timer goes below one minute, 
+change the text color to red and add a background color with rounded corners of 5px to make 
+it stand out from the apple.
+*/
+
+body {
+  margin: 5% auto;
+  text-align: center;
+  background-color: lightblue;
+}
+
+.timer {
+  background-color: rgb(218, 191, 191);
+  border-radius: 20px;
+  text-align: center;
+  width: 70vw;
+  max-width: 500px;
+  margin: auto;
+  padding: 40px 10px;
+}
+
+#timer {
+  font-family: "Orbitron";
+  background-color: rgb(228, 220, 220);
+  border-radius: 5px;
+  border: solid 2px transparent;
+  margin: 10px 80px;
+  padding: 30px 30px;
+  box-shadow: 0px 10px 20px 5px rgb(155, 0, 0);
+  transition: background-color 0.15s ease;
+}
+
+#timer:hover {
+  background-color: rgb(238, 195, 3);
+}
+
+button {
+  font-family: "Roboto", serif;
+  color: white;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  width: 100px;
+  height: 70px;
+  margin: 55px 10px;
+  box-shadow: 0px 10px 20px 5px rgba(155, 0, 0, 0.5);
+  cursor: pointer;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+#start {
+  background-color: rgb(0, 163, 0);
+}
+
+#stop {
+  background-color: rgb(163, 0, 0);
+}
+
+#pause {
+  background-color: rgb(226, 173, 0);
+}
+
+button:hover {
+  border-color: black;
+  display: inline;
+}
